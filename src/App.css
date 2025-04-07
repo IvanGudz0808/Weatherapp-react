@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100%;  /* Ensures the body takes full height of the viewport */
+  margin: 0; /* Removes default margin */
+  overflow: hidden; /* Prevents scrollbars if not needed */
+  }
+  
+  .app {
+    background-image: url('./assets/Cloudy-Sky-Background-Widecsreen.jpg'); /* URL of the background image */
+    background-size: cover; /* Ensures the background image covers the whole screen */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Makes the background fixed during scroll */
+  color: white; /* Ensures text stands out on the background */
+  display: flex; /* Allows us to center the content */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+    
+  }
+  
+  .search input {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    margin-bottom: 30px;
+    outline: none;
+  }
+  
+  .search input:focus {
+    border: 2px solid #008CBA;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .location p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .temp h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .feels, .humidity, .wind {
+    text-align: center;
+  }
+  
+  .bold {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  @media (max-width: 600px) {
+    .search input {
+      width: 200px;
+    }
+  
+    .container {
+      width: 90%;
+    }
+  
+    .top {
+      margin-bottom: 15px;
+    }
+  
+    .bottom {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bottom div {
+      margin-bottom: 15px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
